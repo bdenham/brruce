@@ -10,6 +10,16 @@
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px;
+}
+
+.cards > ul > li:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  border-color: #bbb !important;
 }
 
 .cards .cards-card-body {
@@ -18,10 +28,16 @@
 
 .cards .cards-card-image {
   line-height: 0;
+  overflow: hidden;
 }
 
 .cards > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  transition: transform 0.3s ease !important;
+}
+
+.cards > ul > li:hover img {
+  transform: scale(1.05) !important;
 }
