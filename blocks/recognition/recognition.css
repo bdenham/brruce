@@ -1,0 +1,71 @@
+.recognition {
+  padding: 60px 0;
+  background-color: var(--background-color);
+}
+
+.recognition h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: var(--heading-font-size-xl);
+  color: var(--text-color);
+}
+
+.recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.recognition-item {
+  background: var(--light-color);
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+.recognition-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgb(0 0 0 / 15%);
+  border-color: #bbb;
+}
+
+.recognition-item h3 {
+  font-size: var(--heading-font-size-m);
+  margin: 0 0 16px 0;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.recognition-item p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--dark-color);
+  font-size: var(--body-font-size-s);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .recognition {
+    padding: 40px 0;
+  }
+  
+  .recognition-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 16px;
+  }
+  
+  .recognition-item {
+    padding: 24px;
+  }
+  
+  .recognition h2 {
+    font-size: var(--heading-font-size-l);
+    margin-bottom: 30px;
+  }
+}
