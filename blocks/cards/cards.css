@@ -12,13 +12,13 @@
   background-color: var(--background-color);
   transition: all 0.3s ease !important;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%) !important;
   border-radius: 8px;
 }
 
 .cards > ul > li:hover {
   transform: translateY(-4px) !important;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 8px 25px rgb(0 0 0 / 15%) !important;
   border-color: #bbb !important;
 }
 
